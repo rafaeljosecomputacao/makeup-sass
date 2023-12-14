@@ -1,0 +1,32 @@
+@use '../1-base/variables'
+@use '../1-base/media-queries'
+@use '../3-modules/modules-mixins'
+@use 'sass:map'
+
+/* Footer
+.footer
+    background-color: transparent 
+    text-align: center
+    padding: map-get(variables.$spacings, "large") map-get(variables.$spacings, "small")
+    @include modules-mixins.border-top
+
+    p, span
+        font-size: 14px
+        font-weight: map-get(variables.$font-weights, "light")
+
+    &-links
+        display: flex
+        justify-content: space-around
+        margin: map-get(variables.$spacings, "large") 0 
+
+        @include media-queries.tablet
+            margin: map-get(variables.$spacings, "large") 100px 
+
+        @include media-queries.desktop
+            margin: map-get(variables.$spacings, "large") 350px     
+
+        a
+            color: variables.$secondary-color
+
+            &:hover
+                color: variables.$primary-color

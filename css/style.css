@@ -113,6 +113,39 @@ button {
   color: #FF206E;
 }
 
+/* Footer */
+.footer {
+  background-color: transparent;
+  text-align: center;
+  padding: 32px 8px;
+  border-top: 1px solid #FF206E;
+}
+.footer p, .footer span {
+  font-size: 14px;
+  font-weight: 300;
+}
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  margin: 32px 0;
+}
+@media (min-width: 768px) {
+  .footer-links {
+    margin: 32px 100px;
+  }
+}
+@media (min-width: 1024px) {
+  .footer-links {
+    margin: 32px 350px;
+  }
+}
+.footer-links a {
+  color: #A3A3A3;
+}
+.footer-links a:hover {
+  color: #FF206E;
+}
+
 /* Utilities */
 .primary-color {
   color: #FF206E;
