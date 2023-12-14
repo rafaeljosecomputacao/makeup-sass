@@ -1,0 +1,73 @@
+@use '../1-base/variables'
+@use '../1-base/_media-queries'
+@use '../3-modules/modules-mixins'
+@use 'sass:map'
+
+/* Navbar 
+.navbar
+    background-color: transparent
+    @include modules-mixins.border-bottom 
+
+    &-container
+        @include modules-mixins.navbar-center 
+        padding: map-get(variables.$spacings, "medium") map-get(variables.$spacings, "small")
+
+        @include media-queries.tablet
+            padding: map-get(variables.$spacings, "medium")
+
+        @include media-queries.desktop
+            padding: map-get(variables.$spacings, "medium") 100px         
+
+    &-brand
+        font-size: map-get(variables.$font-sizes, "title")
+        font-weight: map-get(variables.$font-weights, "bold")
+
+        &:hover
+            color: variables.$primary-color
+
+        span
+            font-weight: map-get(variables.$font-weights, "bold")
+
+            &:hover
+                color: variables.$light-color
+
+    &-button 
+        background-color: transparent
+        font-size: 32px
+
+        @include media-queries.desktop
+            display: none           
+
+    &-menu 
+        display: none
+
+        @include media-queries.desktop
+            display: block
+    
+    &-toggle
+        display: none
+
+    &-items 
+        padding-left: map-get(variables.$spacings, "small")
+
+        @include media-queries.tablet
+            padding-left: map-get(variables.$spacings, "medium")
+        
+        @include media-queries.desktop
+            display: flex
+            flex-direction: row
+            padding: 0
+
+    &-item 
+        margin: map-get(variables.$spacings, "small") 0
+
+        @include media-queries.desktop
+            margin: 0
+            padding-left: map-get(variables.$spacings, "large")
+
+    &-link 
+        color: variables.$light-color
+        font-size: map-get(variables.$font-sizes, "link")
+
+        &:hover
+            color: variables.$primary-color 
