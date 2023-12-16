@@ -11,3 +11,18 @@
     flex-direction: row
     align-items: center
     justify-content: space-between
+
+@mixin div-center
+    display: flex
+    align-items: center
+    justify-content: center
+
+@mixin background-img($img)
+    background-image: url('../../img/#{$img}')
+    background-size: 100%
+    background-position: center 
+    background-repeat: no-repeat
+    transition: .5s
+
+    &:hover
+        background-size: 110%
